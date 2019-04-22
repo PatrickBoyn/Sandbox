@@ -1,9 +1,9 @@
 <h2>Users</h2>
 
-<ul>
+<ul *ngIf="loaded && users.length > 0">
     <li *ngFor="let user of users">
             <h3>{{ user.firstName }} {{ user.lastName }}</h3>
-            <ul>
+            <ul *ngIf="showExtended  && user.age && user.address">
                 <li><span class="emphasis">Age:</span>
                     {{user.age}}
                 </li>
@@ -14,3 +14,8 @@
             </ul>
     </li>
 </ul>
+
+<h4 *ngIf="users?.length == 0">No users found</h4>
+
+<h4 *ngIf="!loaded">loading...</h4>
+
