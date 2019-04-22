@@ -42,8 +42,22 @@ export class UsersComponent implements OnInit {
           city: 'Pheonix',
           state: 'AZ'
       }
-    },
+    }
     ];
+
+    this.addUser({
+      firstName: 'Anne',
+      lastName: 'Forrest',
+      age: 21,
+      address: {
+          street: '5 Second St',
+          city: 'Seattle',
+          state: 'Washington'
+      }
+    });
   }
 
+  addUser(user: User) {
+    this.users.push(user);
+  }
 }
