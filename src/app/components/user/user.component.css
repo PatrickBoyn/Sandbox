@@ -1,0 +1,16 @@
+h2{
+    border: 8px solid salmon;
+    background:red;
+    color:white;
+}
+li{
+    font-size: 20px;
+    list-style: none;
+}
+span{
+    text-decoration: none;
+}
+.emphasis{
+    font-weight: bold;
+    text-decoration: underline;
+}
