@@ -17,6 +17,7 @@ button{
     color:white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     border-radius: 5px;
+    border-style:none
 }
 button:active{
     box-shadow: 0 4px 8px rgba(0,0,0,0.8);
@@ -44,7 +45,7 @@ img{
     border-radius: 5px;
 }
 .noShadowInactive{
-    background-color: red;
+    background-color: grey;
     border-radius:  5px;
 }
 .buttonSuccess{
