@@ -3,7 +3,7 @@
         <ul *ngIf="loaded && users.length > 0">
             <li *ngFor="let user of users" class="card">
                     <h3>{{ user.firstName }} {{ user.lastName }}</h3>
-                    <ul *ngIf="showExtended  && user.age && user.address">
+                    <ul id="noShadow" *ngIf="showExtended  && user.age && user.address">
                         <li><span class="emphasis">Age:</span>
                             {{user.age}}
                         </li>
