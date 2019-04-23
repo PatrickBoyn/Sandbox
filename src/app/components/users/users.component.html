@@ -1,9 +1,11 @@
 <div class="container">
     <h2>Users</h2>
+    <button [disabled]="!enableAdd">Add New User</button>
         <ul *ngIf="loaded && users.length > 0">
             <li *ngFor="let user of users" class="card">
                     <h3>{{ user.firstName }} {{ user.lastName }}</h3>
                     <ul id="noShadow" *ngIf="showExtended  && user.age && user.address">
+                        <img [src]="user.image">
                         <li><span class="emphasis">Age:</span>
                             {{user.age}}
                         </li>
