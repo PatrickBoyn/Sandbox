@@ -4,7 +4,7 @@
         <ul *ngIf="loaded && users.length > 0">
             <li *ngFor="let user of users" class="card">
                     <h3>{{ user.firstName }} {{ user.lastName }}</h3>
-                    <ul id="noShadow" *ngIf="showExtended  && user.age && user.address"[class.noShadowInactive]="user.isActive">
+                    <ul id="noShadow" *ngIf="showExtended  && user.age && user.address"[class.noShadowInactive]="user.isActive" [style.border-color]="user.isActive ? 'green' : ''">
                         <img [src]="user.image">
                         <li><span class="emphasis">Age:</span>
                             {{user.age}}
