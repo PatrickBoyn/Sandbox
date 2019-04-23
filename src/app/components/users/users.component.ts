@@ -16,7 +16,7 @@ export class UsersComponent implements OnInit {
     setTimeout(() => {
       this.users = [
         {
-        firstName: 'Ellie',
+        firstName: 'George',
         lastName: 'Barr',
         age: 43,
         address: {
