@@ -4,12 +4,22 @@ h3{
     border-radius: 5px 5px 0 0;
     padding-left: 20px;
 }
+ul{
+    padding:0;
+    text-align:center;
+}
 li{
     list-style: none;
 }
 button{
-    margin-left:3%;
     width:20%;
+    background-color:blue;
+    color:white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+button:active{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.8);
 }
 img{
     max-width: 100%;
@@ -32,4 +42,12 @@ img{
 #noShadow{
     border:1px solid rgba(0,0,0, 0.3);
     border-radius: 5px;
+}
+.noShadowInactive{
+    background-color: red;
+    border-radius:  5px;
+}
+.buttonSuccess{
+    background-color: green;
+    color:white;
 }
